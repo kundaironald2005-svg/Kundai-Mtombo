@@ -627,7 +627,7 @@ const socialImgs = [
     },
     {
         name: "linkedin",
-        imgPath: "/images/linkedin1.png",
+        imgPath: "/images/linkedin.png",
         url: "https://www.linkedin.com/in/kundai-ronald-9b8bba365",
     },
     {
