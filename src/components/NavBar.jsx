@@ -42,7 +42,6 @@ const NavBar = () => {
                    <div className="inner">
                        <span>Contact me</span>
                    </div>
-
                </a>
            </div>
 

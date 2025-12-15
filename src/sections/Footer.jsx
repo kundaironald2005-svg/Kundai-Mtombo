@@ -7,7 +7,17 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-container">
                 <div className="flex flex-col justify-center md:items-start items-center">
-                    <a href="/">Visit my blog</a>
+                    <div className="flex items-center">
+                        <a href="/">Visit my blog</a>
+                        <a
+                            href="https://drive.google.com/file/d/1U1ZM7FLwvulG7HunTbZfkFR2U3xr6UfG/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ marginLeft: '8px' }}
+                        >
+                            Download Resume
+                        </a>
+                    </div>
                 </div>
                 <div className="socials">
                     {socialImgs.map((img) => (
