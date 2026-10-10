@@ -85,7 +85,7 @@ const ShowcaseSection = () => {
             <div className="w-full">
                 <div className="showcaselayout">
                     {/* LEFT */}
-                    <div className="first-project-wrapper" ref={project1Ref}>
+                    <div className="first-project-wrapper group" ref={project1Ref}>
                         <div className="image-wrapper">
                             <img src="/images/project.png" alt="Ryde"/>
                         </div>
@@ -100,7 +100,7 @@ const ShowcaseSection = () => {
 
                     {/* RIGHT */}
                     <div className="project-list-wrapper overflow-hidden">
-                        <div className="project" ref={project2Ref}>
+                        <div className="project group" ref={project2Ref}>
                             <div className="image-wrapper bg-[#ffefdb]">
                                 <img src="/images/project2.png" alt="Library Management
                                 Platform" />
@@ -112,7 +112,7 @@ const ShowcaseSection = () => {
 
                         </div>
 
-                        <div className="project" ref={project3Ref}>
+                        <div className="project group" ref={project3Ref}>
                             <div className="image-wrapper bg-[#ffe7eb]">
                                 <img src="/images/project1.png" alt="YC Directory" />
                             </div>
@@ -128,7 +128,7 @@ const ShowcaseSection = () => {
                 {/* SECOND SHOWCASE ROW */}
                 <div className="showcaselayout mt-16">
                     {/* LEFT (featured) */}
-                    <div className="first-project-wrapper" ref={project6Ref}>
+                    <div className="first-project-wrapper group" ref={project6Ref}>
                         <div className="image-wrapper">
                             <img src="/images/netflix-clone.png" alt="FinTech App"/>
                         </div>
@@ -142,7 +142,7 @@ const ShowcaseSection = () => {
 
                     {/* RIGHT (list) */}
                     <div className="project-list-wrapper overflow-hidden">
-                        <div className="project" ref={project4Ref}>
+                        <div className="project group" ref={project4Ref}>
                             <div className="image-wrapper bg-[#e7f7ff]">
                                 <img src="/images/whatsapp-clone.png" alt="Event Manager" />
                             </div>
@@ -152,7 +152,7 @@ const ShowcaseSection = () => {
                             </p>
                         </div>
 
-                        <div className="project" ref={project5Ref}>
+                        <div className="project group" ref={project5Ref}>
                             <div className="image-wrapper bg-[#f0ffe7]">
                                 <img src="/images/chat-app.png" alt="Fitness Tracker" />
                             </div>
@@ -166,7 +166,7 @@ const ShowcaseSection = () => {
                 {/* THIRD SHOWCASE ROW */}
                 <div className="showcaselayout mt-16">
                     {/* LEFT (featured) */}
-                    <div className="first-project-wrapper" ref={project9Ref}>
+                    <div className="first-project-wrapper group" ref={project9Ref}>
                         <div className="image-wrapper">
                             <img src="/images/blog.png" alt="Social App"/>
                         </div>
@@ -180,7 +180,7 @@ const ShowcaseSection = () => {
 
                     {/* RIGHT (list) */}
                     <div className="project-list-wrapper overflow-hidden">
-                        <div className="project" ref={project7Ref}>
+                        <div className="project group" ref={project7Ref}>
                             <div className="image-wrapper bg-[#f5e7ff]">
                                 <img src="/images/car-rental.png" alt="Task Manager" />
                             </div>
@@ -190,7 +190,7 @@ const ShowcaseSection = () => {
                             </p>
                         </div>
 
-                        <div className="project" ref={project8Ref}>
+                        <div className="project group" ref={project8Ref}>
                             <div className="image-wrapper bg-[#e7fff7]">
                                 <img src="/images/food-delivery.png" alt="E-commerce Store" />
                             </div>
@@ -204,7 +204,7 @@ const ShowcaseSection = () => {
                 {/* FOURTH SHOWCASE ROW */}
                 <div className="showcaselayout mt-16">
                     {/* LEFT (featured) */}
-                    <div className="first-project-wrapper" ref={project12Ref}>
+                    <div className="first-project-wrapper group" ref={project12Ref}>
                         <div className="image-wrapper">
                             <img src="/images/deepseek-clone.png" alt="AI Search App"/>
                         </div>
@@ -218,7 +218,7 @@ const ShowcaseSection = () => {
 
                     {/* RIGHT (list) */}
                     <div className="project-list-wrapper overflow-hidden">
-                        <div className="project" ref={project10Ref}>
+                        <div className="project group" ref={project10Ref}>
                             <div className="image-wrapper bg-[#eaf0ff]">
                                 <img src="/images/chatgpt-clone.png" alt="AI Chat App" />
                             </div>
@@ -228,7 +228,7 @@ const ShowcaseSection = () => {
                             </p>
                         </div>
 
-                        <div className="project" ref={project11Ref}>
+                        <div className="project group" ref={project11Ref}>
                             <div className="image-wrapper bg-[#e7fff2]">
                                 <img src="/images/gemini-clone.png" alt="AI Assistant" />
                             </div>
@@ -243,7 +243,7 @@ const ShowcaseSection = () => {
                 {/* FIFTH SHOWCASE ROW */}
                 <div className="showcaselayout mt-16">
                     {/* LEFT (featured) */}
-                    <div className="first-project-wrapper" ref={project15Ref}>
+                    <div className="first-project-wrapper group" ref={project15Ref}>
                         <div className="image-wrapper">
                             <img src="/images/doctor-appointment.png" alt="Healthcare App"/>
                         </div>
@@ -257,7 +257,7 @@ const ShowcaseSection = () => {
 
                     {/* RIGHT (list) */}
                     <div className="project-list-wrapper overflow-hidden">
-                        <div className="project" ref={project13Ref}>
+                        <div className="project group" ref={project13Ref}>
                             <div className="image-wrapper bg-[#fff7e7]">
                                 <img src="/images/insiderjobs.png" alt="E-commerce Frontend" />
                             </div>
@@ -267,7 +267,7 @@ const ShowcaseSection = () => {
                             </p>
                         </div>
 
-                        <div className="project" ref={project14Ref}>
+                        <div className="project group" ref={project14Ref}>
                             <div className="image-wrapper bg-[#f3e7ff]">
                                 <img src="/images/portfolio.png" alt="Developer Portfolio" />
                             </div>
@@ -281,7 +281,7 @@ const ShowcaseSection = () => {
                 {/* SIXTH SHOWCASE ROW */}
                 <div className="showcaselayout mt-16">
                     {/* LEFT (featured) */}
-                    <div className="first-project-wrapper" ref={project18Ref}>
+                    <div className="first-project-wrapper group" ref={project18Ref}>
                         <div className="image-wrapper">
                             <img src="/images/Project Management Dashboard.png" alt="Project Management Dashboard"/>
                         </div>
@@ -295,7 +295,7 @@ const ShowcaseSection = () => {
 
                     {/* RIGHT (list) */}
                     <div className="project-list-wrapper overflow-hidden">
-                        <div className="project" ref={project16Ref}>
+                        <div className="project group" ref={project16Ref}>
                             <div className="image-wrapper bg-[#eaf2ff]">
                                 <img src="/images/Modern Apparel E-Commerce Store.png" alt="E-Commerce Store" />
                             </div>
@@ -305,7 +305,7 @@ const ShowcaseSection = () => {
                             </p>
                         </div>
 
-                        <div className="project" ref={project17Ref}>
+                        <div className="project group" ref={project17Ref}>
                             <div className="image-wrapper bg-[#e7fff2]">
                                 <img src="/images/Edemy Online Learning Platform.png" alt="Online Learning Platform" />
                             </div>
