@@ -1,6 +1,5 @@
 import {words} from "../constants/index.js";
 import Button from "../components/Button.jsx";
-import HeroExperience from "../components/HeroModels/HeroExperience.jsx";
 import { useGSAP} from "@gsap/react";
 import gsap from 'gsap';
 import AnimatedCounter from "../components/AnimatedCounter.jsx";
@@ -19,8 +18,25 @@ const Hero = () => {
                 duration: 1,
                 easing: 'power2.inOut',
             },
-            )
+        );
+
+        gsap.fromTo('.hero-profile-img',
+            {
+                scale: 0.85,
+                opacity: 0,
+                y: 30
+            },
+            {
+                scale: 1,
+                opacity: 1,
+                y: 0,
+                duration: 1.2,
+                ease: 'power2.out',
+                delay: 0.2
+            }
+        );
     })
+
     return (
         <section id="hero" className="relative overflow-hidden">
             <div className="absolute top-0 left-0 z-10">
@@ -29,8 +45,7 @@ const Hero = () => {
 
             <div className="hero-layout">
                 {/*LEFT: HERO CONTENT */}
-                <header className="flex flex-col justify-center md:w-full w-screen
-                md:px-20 px-5">
+                <header className="flex flex-col justify-center w-full xl:w-[56%] z-10">
                     <div className="flex flex-col gap-7">
                         <div className="hero-text">
                             <h1>
@@ -56,9 +71,8 @@ const Hero = () => {
                             <h1 className="text-gradient font-bold tracking-tight pb-2">into Real Projects</h1>
                             <h1 className="text-gradient font-bold tracking-tight">that Deliver Results</h1>
                         </div>
-                        <p className="text-white-50 md:text-xl relative z-10
-                            pointer-events-none">
-                            Hi, I'm Kundai Mtombo, a Computer Science Student and Software rep <br /> based in Zimbabwe with a passion for technology. I'm also the founder <br /> of SaaS (Software as a Service) Labs Zimbabwe.
+                        <p className="text-white-50 md:text-xl relative z-10">
+                            Hi, I'm Kundai Mtombo, a Computer Science Student and Software rep <br className="hidden md:inline" /> based in Zimbabwe with a passion for technology. I'm also the founder <br className="hidden md:inline" /> of SaaS (Software as a Service) Labs Zimbabwe.
                         </p>
                         <Button
                             className="md:w-80 md:h-16 w-60 h-12"
@@ -67,10 +81,19 @@ const Hero = () => {
                         />
                     </div>
                 </header>
-                {/*RIGHT: 3D MODEL */}
-                <figure>
-                    <div className="hero-3d-layout">
-                        <HeroExperience />
+
+                {/*RIGHT: PROFILE PICTURE */}
+                <figure className="hero-image-layout">
+                    <div className="relative flex justify-center items-center">
+                        {/* Ambient modern glow behind the portrait */}
+                        <div className="absolute size-64 sm:size-80 md:size-96 rounded-full bg-gradient-to-tr from-[#00c6ff]/25 via-[#0072ff]/20 to-transparent blur-3xl pointer-events-none" />
+
+                        {/* Profile Picture */}
+                        <img
+                            src="/images/profile-picture-removebg-preview.png"
+                            alt="Kundai Mtombo"
+                            className="hero-profile-img relative z-10 w-64 sm:w-80 md:w-96 xl:w-[440px] max-w-full h-auto object-contain drop-shadow-[0_15px_35px_rgba(0,198,255,0.25)] transition-transform duration-500 hover:scale-[1.03]"
+                        />
                     </div>
                 </figure>
             </div>
