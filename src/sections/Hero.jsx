@@ -72,7 +72,7 @@ const Hero = () => {
                             <h1 className="text-gradient font-bold tracking-tight">that Deliver Results</h1>
                         </div>
                         <p className="text-white-50 md:text-xl relative z-10">
-                            Hi, I'm Kundai Mtombo, a Computer Science Student and Software rep <br className="hidden md:inline" /> based in Zimbabwe with a passion for technology. I'm also the founder <br className="hidden md:inline" /> of SaaS (Software as a Service) Labs Zimbabwe.
+                            Hi, I'm Kundai Mtombo, a Software Engineer and Full-Stack Developer based in Zimbabwe with a passion for building high-impact technology. I'm also the founder of SaaS Labs Zimbabwe and a Computer Science student at Midlands State University.
                         </p>
                         <Button
                             className="md:w-80 md:h-16 w-60 h-12"
